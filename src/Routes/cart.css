@@ -1,0 +1,151 @@
+.cart {
+  width: 90%;
+  border: 1px solid grey;
+  height: 20rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  margin-top: 2rem;
+  transition: all 0.3s linear;
+}
+.cart:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+.card-img {
+  width: 12rem;
+  height: 15rem;
+  max-width: 13rem;
+  object-fit: contain;
+}
+.info {
+  margin-left: -2rem;
+}
+.next-button {
+  font-size: 1.2rem;
+  padding: 1rem 2.5rem;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: rgb(14, 14, 26);
+  color: rgb(234, 234, 234);
+  font-weight: 700;
+  transition: 0.6s;
+  box-shadow: 0px 0px 60px #1f4c65;
+  -webkit-box-reflect: below 10px
+    linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+}
+
+.next-button:active {
+  scale: 0.92;
+}
+
+.next-button:hover {
+  background: rgb(2, 29, 78);
+  background: linear-gradient(
+    270deg,
+    rgba(2, 29, 78, 0.681) 0%,
+    rgba(31, 215, 232, 0.873) 60%
+  );
+  color: rgb(4, 4, 38);
+}
+.cssbuttons-io-button {
+  background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  border-radius: 10em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 500;
+  box-shadow: 0 0 1.6em rgba(183, 33, 255, 0.3),
+    0 0 1.6em hsla(191, 98%, 56%, 0.3);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 10em;
+  right: 0.3em;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #b721ff;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.9);
+}
+.cart-count {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+@media screen and (max-width: 768px) {
+  .cart {
+    height: 15rem;
+  }
+  .card-img {
+    width: 180px;
+    height: 160px;
+    max-width: 220px;
+  }
+  .info {
+    max-width: 60px;
+    font-size: 10px;
+    margin: 0;
+    line-height: 10px;
+  }
+  .cart-count {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .cart {
+    height: 15rem;
+  }
+  .card-img {
+    width: 120px;
+    height: 100px;
+    max-width: 125px;
+  }
+  .info {
+    max-width: 30px;
+    font-size: 8px;
+    margin: 0;
+    line-height: 5\8px;
+  }
+  .cart-count {
+    font-size: 10px;
+  }
+}

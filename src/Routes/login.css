@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.form-cont {
+    height: 30rem;
+    width: 25rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(215, 215, 215);
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgb(215, 215, 215);
+    transition: all 0.3s linear;
+}
+
+.form-cont:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.form {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 80%;
+}
+
+.input-container {
+    position: relative;
+    margin: 10px auto;
+    width: 190px;
+}
+
+.input-container input[type="text"] {
+    padding: 0 10px;
+    font-size: 18px;
+    color: black;
+    border: none;
+    border-bottom: 2px solid #a5a2a2;
+    outline: none;
+    width: 100%;
+    background-color: transparent;
+}
+
+.label {
+    transition: all 0.3s ease;
+    color: #d3d2d2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.input-container input[type="text"]:focus~.label,
+.input-container input[type="text"]:valid~.label {
+    top: -20px;
+    transition: 0.3s;
+    color: rgb(172, 46, 172);
+}
+
+.input-container .underline {
+    position: absolute;
+    bottom: 4px;
+    left: -7px;
+    height: 2px;
+    width: 110%;
+    background-color: rgb(172, 46, 172);
+    transform: scaleX(0);
+}
+
+.input-container .sideline {
+    position: relative;
+    bottom: 15px;
+    right: 18px;
+    height: 2px;
+    width: 18%;
+    background-color: rgb(172, 46, 172);
+    transform: scaleX(0);
+    rotate: 90deg;
+}
+
+.input-container .upperline {
+    position: absolute;
+    bottom: 30px;
+    left: -8px;
+    height: 2px;
+    width: 110%;
+    background-color: rgb(172, 46, 172);
+    transform: scaleX(0);
+}
+
+.input-container .line {
+    position: relative;
+    bottom: 17px;
+    left: 178px;
+    height: 2px;
+    width: 18%;
+    background-color: rgb(172, 46, 172);
+    transform: scaleX(0);
+    rotate: 90deg;
+}
+
+.input-container input[type="text"]:focus~.underline,
+.input-container input[type="text"]:valid~.underline {
+    transform: scaleX(1);
+    transition: 1s;
+}
+
+.input-container input[type="text"]:focus~.sideline,
+.input-container input[type="text"]:valid~.sideline {
+    transform: scaleX(1);
+    transition: 1s;
+}
+
+.input-container input[type="text"]:focus~.upperline,
+.input-container input[type="text"]:valid~.upperline {
+    transform: scaleX(1);
+    transition: 1s;
+}
+
+.input-container input[type="text"]:focus~.line,
+.input-container input[type="text"]:valid~.line {
+    transform: scaleX(1);
+    transition: 1s;
+}
+
+.button {
+    position: relative;
+    background-color: transparent;
+    color: #e8e8e8;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 10px;
+    width: 120px;
+    height: 50px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(51, 51, 51, 0.2);
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.button::before {
+    content: "SignUp";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: linear-gradient(135deg, #7b4397, #dc2430);
+    transform: translate(0%, 90%);
+    z-index: 99;
+    position: relative;
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    color: white;
+}
+
+.button::after {
+    content: "SignUp";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    transform-origin: top;
+    transform: translate(0%, -100%);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.button:hover::before {
+    transform: translate(0%, 0%);
+}
+
+.button:hover::after {
+    transform: translate(0%, -200%);
+}
+
+.button:focus {
+    outline: none;
+}
+
+.button:active {
+    scale: 0.95;
+}
+
+.buttonS {
+    position: relative;
+    background-color: transparent;
+    color: #e8e8e8;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 10px;
+    width: 120px;
+    height: 50px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(51, 51, 51, 0.2);
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.buttonS::before {
+    content: "Login";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: linear-gradient(135deg, #7b4397, #dc2430);
+    transform: translate(0%, 90%);
+    z-index: 99;
+    position: relative;
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.buttonS::after {
+    content: "Login";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    transform-origin: top;
+    transform: translate(0%, -100%);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.buttonS:hover::before {
+    transform: translate(0%, 0%);
+}
+
+.buttonS:hover::after {
+    transform: translate(0%, -200%);
+}
+
+.buttonS:focus {
+    outline: none;
+}
+
+.buttonS:active {
+    scale: 0.95;
+}
+
+@media screen and (max-width: 768px) {
+    .form-cont {
+        width: 18rem;
+        height: 23rem;
+    }
+    .input-container {
+        width: 120px;
+        margin: 0;
+    }
+    .input-container .line {
+        left: 105px;
+        width: 30%;
+    }
+    .input-container .sideline {
+        width: 30%;
+    }
+    .input-container .underline {
+        width: 115%;
+    }
+    .input-container .upperline {
+        width: 115%;
+    }
+    .label {
+        font-size: 10px;
+    }
+    .button {
+        font-size: 10px;
+        width: 95px;
+        height: 40px;
+    }
+    .buttonS {
+        font-size: 10px;
+        width: 95px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .form-cont {
+        width: 15rem;
+        height: 20rem;
+    }
+    .input-container {
+        width: 90px;
+        margin: 0;
+    }
+    .input-container .line {
+        left: 80px;
+        width: 40%;
+    }
+    .input-container .sideline {
+        width: 40%;
+    }
+    .input-container .underline {
+        width: 125%;
+    }
+    .input-container .upperline {
+        width: 125%;
+    }
+    .label {
+        font-size: 8px;
+    }
+    .button {
+        font-size: 8px;
+        width: 85px;
+        height: 30px;
+    }
+    .buttonS {
+        font-size: 8px;
+        width: 85px;
+        height: 30px;
+    }
+}

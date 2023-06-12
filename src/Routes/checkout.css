@@ -1,0 +1,116 @@
+.checkout-card {
+    height: 13rem;
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 1px solid grey;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.cart-image {
+    height: 10rem;
+    object-fit: contain;
+}
+
+.cart-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    font-size: 1.25rem;
+}
+
+.address-information {
+    width: 85%;
+    height: 7rem;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid grey;
+    margin: 0 auto;
+    margin-top: 1.25rem;
+    word-spacing: 0.25rem;
+    font-size: 1.12rem;
+}
+
+.checkout-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 2rem;
+}
+
+.location-icon {
+    font-size: 1.25rem;
+    margin-right: 0.8rem;
+}
+
+.payment {
+    width: 13rem;
+    height: 15rem;
+    color: white;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 8%;
+    top: 15%;
+}
+
+@media screen and (max-width: 768px) {
+    .cart-image {
+        height: 100px;
+        max-width: 120px;
+        object-fit: contain;
+    }
+    .cart-info {
+        font-size: 10px;
+    }
+    .checkout-card {
+        height: 7rem;
+    }
+    .payment {
+        width: 7rem;
+        height: 8rem;
+        font-size: 10px;
+    }
+    .address-information {
+        height: 4rem;
+        padding: 0.75rem;
+        word-spacing: 0.1rem;
+        font-size: 10px;
+    }
+    .location-icon {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .cart-image {
+        height: 80px;
+        max-width: 100px;
+        object-fit: contain;
+    }
+    .cart-info {
+        font-size: 8px;
+    }
+    .checkout-card {
+        height: 6rem;
+    }
+    .payment {
+        width: 6rem;
+        height: 7rem;
+        font-size: 8px;
+    }
+    .address-information {
+        height: 3rem;
+        padding: 0.5rem;
+        word-spacing: 0.05rem;
+        font-size: 8px;
+    }
+    .location-icon {
+        font-size: 11px;
+    }
+}

@@ -1,0 +1,70 @@
+.nav-con {
+  position: fixed;
+  height: 3rem;
+  background-color: rgb(215, 215, 215);
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  font-weight: 550;
+}
+.nav-con a {
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s linear;
+  padding: 4px;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.cartshopping {
+  font-size: 1.5rem;
+}
+.gmail {
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-con a:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  color: #678e3e;
+}
+@media screen and (max-width: 576px) {
+  .nav-con {
+    font-size: 12px;
+    font-weight: lighter;
+  }
+  .cartshopping {
+    font-size: 12px;
+    font-weight: lighter;
+  }
+  .gmail {
+    font-size: 8px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .nav-con {
+    font-size: 14px;
+    font-weight: lighter;
+  }
+  .cartshopping {
+    font-size: 14px;
+    font-weight: lighter;
+  }
+  .gmail {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav-con {
+    font-size: 18px;
+  }
+  .cartshopping {
+    font-size: 18px;
+  }
+  .gmail {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,152 @@
+.dots-container {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.dot {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  border-radius: 10px;
+  background-color: #b3d4fc;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.dot:last-child {
+  margin-right: 0;
+}
+
+.dot:nth-child(1) {
+  animation-delay: -0.3s;
+}
+
+.dot:nth-child(2) {
+  animation-delay: -0.1s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.1s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+    background-color: #b3d4fc;
+    box-shadow: 0 0 0 0 rgba(178, 212, 252, 0.7);
+  }
+
+  50% {
+    transform: scale(1.2);
+    background-color: #6793fb;
+    box-shadow: 0 0 0 10px rgba(178, 212, 252, 0);
+  }
+
+  100% {
+    transform: scale(0.8);
+    background-color: #b3d4fc;
+    box-shadow: 0 0 0 0 rgba(178, 212, 252, 0.7);
+  }
+}
+.products {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 1.25rem;
+  border-radius: 15px;
+  transition: all 0.3s ease-in-out;
+  padding: 15px;
+}
+.products:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.welcome {
+  background-color: black;
+  border-radius: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: white;
+  padding: 1.5rem 2rem;
+  width: 30rem;
+  margin: 0 auto;
+  animation: show 2s ease-in-out;
+}
+.product-card {
+  width: 18rem;
+  margin-top: 10px;
+  height: 400px;
+}
+.body-stock {
+  text-align: center;
+}
+@media screen and (max-width: 576px) {
+  .welcome {
+    width: 15rem;
+    padding: 0;
+    letter-spacing: 0;
+  }
+  .products {
+    max-height: 240px;
+  }
+  .product-image {
+    max-height: 50px;
+  }
+  .product-card {
+    max-width: 150px;
+    max-height: 200px;
+  }
+  .body-name {
+    font-weight: lighter;
+    font-size: 12px;
+  }
+  .body-stock {
+    font-size: 12px;
+  }
+  .p-r {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .welcome {
+    width: 15rem;
+    padding: 0;
+    letter-spacing: 0;
+  }
+  .products {
+    max-height: 240px;
+  }
+  .product-image {
+    max-height: 50px;
+  }
+  .product-card {
+    max-width: 150px;
+    max-height: 200px;
+  }
+  .body-name {
+    font-weight: lighter;
+    font-size: 12px;
+  }
+  .body-stock {
+    font-size: 12px;
+  }
+  .p-r {
+    font-size: 10px;
+  }
+}
+/*  */
+@keyframes show {
+  0% {
+    transform: scale(0.1);
+    opacity: 0.2;
+  }
+  50% {
+    transform: scale(1.6);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

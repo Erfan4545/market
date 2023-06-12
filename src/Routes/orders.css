@@ -1,0 +1,30 @@
+.more-info-button {
+  border: none;
+  padding: 0.5rem;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+.more-info-button:hover {
+  background-color: rgb(48, 48, 48);
+}
+@media screen and (max-width: 768px) {
+  .orders-teble {
+    font-size: 12px;
+  }
+  .more-info-button {
+    padding: 3px;
+    font-size: 12px;
+    border-radius: 5px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .orders-teble {
+    font-size: 8px;
+  }
+  .more-info-button {
+    padding: 3px;
+    font-size: 7px;
+    border-radius: 5px;
+  }
+}

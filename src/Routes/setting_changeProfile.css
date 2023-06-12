@@ -1,0 +1,131 @@
+.done-button {
+    position: relative;
+    background-color: transparent;
+    color: #e8e8e8;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 10px;
+    width: 120px;
+    height: 50px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(51, 51, 51, 0.2);
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.done-button::before {
+    content: "Done";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: linear-gradient(135deg, #7b4397, #dc2430);
+    transform: translate(0%, 90%);
+    z-index: 99;
+    position: relative;
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    color: white;
+}
+
+.done-button::after {
+    content: "Done";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    transform-origin: top;
+    transform: translate(0%, -100%);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.done-button:hover::before {
+    transform: translate(0%, 0%);
+}
+
+.done-button:hover::after {
+    transform: translate(0%, -200%);
+}
+
+.done-button:focus {
+    outline: none;
+}
+
+.done-button:active {
+    scale: 0.95;
+}
+
+.setting-bar {
+    position: absolute;
+    top: 10%;
+    margin-left: 2rem;
+    padding-left: 1rem;
+}
+
+.upload-avatar-back {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border: 1px solid grey;
+    background-color: rgb(215, 215, 215);
+    border-radius: 20px;
+}
+
+.upload-avatar-button {
+    border: none;
+    width: 12rem;
+    margin: 0 auto;
+    margin-top: 20px;
+    height: 35px;
+    border-radius: 15px;
+    color: grey;
+}
+
+@media screen and (max-width: 768px) {
+    .done-button {
+        font-size: 10px;
+        width: 95px;
+        height: 40px;
+    }
+    .setting-bar {
+        font-size: 10px;
+        max-width: 140px;
+    }
+    .upload-avatar-back {
+        padding: 10px;
+        font-size: 10px;
+    }
+    .upload-avatar-button {
+        width: 8rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .done-button {
+        font-size: 8px;
+        width: 85px;
+        height: 30px;
+    }
+    .setting-bar {
+        font-size: 8px;
+        max-width: 120px;
+    }
+    .upload-avatar-back {
+        padding: 8px;
+        font-size: 8px;
+    }
+    .upload-avatar-button {
+        width: 6rem;
+    }
+}

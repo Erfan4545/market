@@ -1,0 +1,52 @@
+.inputs {
+  width: 20rem;
+  height: 2.25rem;
+  border: 1px solid rgb(215, 215, 215);
+  padding: 0 1.25rem;
+  border-radius: 8px;
+}
+.text-area {
+  height: 11rem;
+  width: 20rem;
+}
+.city-selection {
+  width: 20rem;
+  height: 2.25rem;
+  border: 5px double black;
+}
+@media screen and (max-width: 768px) {
+  .inputs {
+    width: 180px;
+    height: 30px;
+    font-size: 8px;
+  }
+  .text-area {
+    width: 180px;
+    height: 70px;
+    font-size: 8px;
+  }
+  .city-selection {
+    width: 180px;
+    height: 30px;
+    border: 1px solid black;
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .inputs {
+    width: 140px;
+    height: 20px;
+    font-size: 10px;
+  }
+  .text-area {
+    width: 140px;
+    height: 70px;
+    font-size: 10px;
+  }
+  .city-selection {
+    width: 140px;
+    height: 20px;
+    border: 1px solid black;
+    font-size: 8px;
+  }
+}
